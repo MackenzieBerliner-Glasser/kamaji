@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Polymer/tachometer/master/config.schema.json",
+  "benchmarks": [
+    {
+      "name": "decimal.js w/ JJ technique",
+      "browser": {
+        "name": "ie"
+      },
+      "measurement": [
+        {
+          "mode": "performance",
+          "entryName": "perf"
+        }
+      ],
+      "url": "http://localhost:8080/decimalJS_JJ.html"
+    },
+    {
+      "name": "decimal.js w/ BigInt technique",
+      "browser": {
+        "name": "ie"
+      },
+      "measurement": [
+        {
+          "mode": "performance",
+          "entryName": "perf"
+        }
+      ],
+      "url": "http://localhost:8080/decimalJS_BigInt.html"
+    },
+    {
+      "name": "decimal.js w/ string (control)",
+      "browser": {
+        "name": "ie"
+      },
+      "measurement": [
+        {
+          "mode": "performance",
+          "entryName": "perf"
+        }
+      ],
+      "url": "http://localhost:8080/control.html"
+    }
+  ],
+  "sampleSize": 50,
+  "timeout": 5,
+  "resolveBareModules": true,
+  "root": "."
+}
