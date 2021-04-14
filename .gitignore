@@ -3,4 +3,4 @@ yarn-error.log
 node_modules
 output.json
 dist/
-# yarn.lock
+yarn.lock
